@@ -1,10 +1,10 @@
 node{
 
-   stage('SCM Checkout'){
-     git 'https://github.com/pkmeruga/jenkins-sonar-examples.git'
+   stage('SCM Checkout') {
+     checkout scm
    }
 
-   stage('Build') {
+   stage('Clean and Build') {
       sh "mvn clean package"
    }
 
