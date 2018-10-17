@@ -10,7 +10,7 @@ public class HelloWorldUnitTest {
         new HelloWorld().coveredByUnitTest();
     }
 
-    @Ignore
+    @Test
     public void skipTest() {
         new HelloWorld().coveredByUnitTest();
     }
