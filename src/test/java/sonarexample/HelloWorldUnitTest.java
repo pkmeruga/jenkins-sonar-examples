@@ -15,7 +15,7 @@ public class HelloWorldUnitTest {
         new HelloWorld().coveredByUnitTest();
     }
 
-    @Ignore
+    @Test
     public void skipTest2() {
         new HelloWorld().coveredByUnitTest();
     }
